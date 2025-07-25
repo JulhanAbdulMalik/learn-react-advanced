@@ -18,7 +18,7 @@ const Counter = memo(({ count }) => {
   return <p>Counter: {count}</p>;
 });
 
-const UseMemo = () => {
+const Memo = () => {
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState(["Coding", "Cooking", "Sleeping"]);
 
@@ -32,7 +32,7 @@ const UseMemo = () => {
 
   return (
     <div>
-      <h1>UseMemo</h1>
+      <h1>Memo</h1>
 
       <TodoList todos={todos} />
       <button onClick={() => addTodo({ newTodo: "Learning" })}>Add Todo</button>
@@ -43,4 +43,4 @@ const UseMemo = () => {
   );
 };
 
-export default UseMemo;
+export default Memo;

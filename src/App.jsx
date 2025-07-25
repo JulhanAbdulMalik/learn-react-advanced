@@ -1,5 +1,6 @@
 import { useId } from "react";
-import UseMemo from "./UseMemo";
+import Memo from "./components/Memo";
+import UseMemo from "./components/UseMemo";
 
 const Input = ({ label = "default" }) => {
   const id = useId();
@@ -19,6 +20,10 @@ function App() {
       <Input label="firstname" />
       <Input />
       <Input />
+      <hr />
+
+      <Memo />
+      <hr />
 
       <UseMemo />
     </>
