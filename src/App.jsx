@@ -1,4 +1,5 @@
 import { useId } from "react";
+import UseMemo from "./UseMemo";
 
 const Input = ({ label = "default" }) => {
   const id = useId();
@@ -17,6 +18,9 @@ function App() {
       <h1>Hello World!</h1>
       <Input label="firstname" />
       <Input />
+      <Input />
+
+      <UseMemo />
     </>
   );
 }
